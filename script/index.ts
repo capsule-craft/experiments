@@ -1,9 +1,10 @@
 import { TransactionBlock } from "@mysten/sui.js";
 import { packageId, signer } from "./config";
-import { splitFile } from "./fs";
+import { fileToDataURI, splitData } from "./fs";
 
 async function main() {
-  const parts = await splitFile("./file.jpeg");
+  const data = await fileToDataURI("./file.jpeg");
+  const parts = await splitData(data);
   const txb = new TransactionBlock();
 
   const [file] = txb.moveCall({
