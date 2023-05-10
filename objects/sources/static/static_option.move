@@ -49,4 +49,8 @@ module objects::static_option {
     public fun remove_(object: &mut StaticObject): ChildObject {
         option::extract(&mut object.child)
     }
+
+    public fun return_and_share(object: StaticObject) {
+        transfer::share_object(object);
+    }
 }

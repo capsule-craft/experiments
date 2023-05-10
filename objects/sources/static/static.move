@@ -35,4 +35,8 @@ module objects::static {
 
         child
     }
+
+    public fun return_and_share(object: StaticObject) {
+        transfer::share_object(object);
+    }
 }

@@ -56,4 +56,8 @@ module objects::dynamic_object {
 
         child
     }
+
+    public fun return_and_share(object: MainObject) {
+        transfer::share_object(object);
+    }
 }
