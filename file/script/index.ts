@@ -18,7 +18,7 @@ async function main() {
 
     txb.moveCall({
       typeArguments: [],
-      arguments: [file, txb.pure(part)],
+      arguments: [file, txb.pure(Buffer.from(part).toString())],
       target: `${packageId}::file::append`,
     });
   }

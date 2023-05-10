@@ -18,8 +18,8 @@ module ois::file {
         }
     }
 
-    public fun append(self: &mut File, chunk: vector<u8>) {
-        string::append_utf8(&mut self.data, chunk);
+    public fun append(self: &mut File, chunk: String) {
+        string::append(&mut self.data, chunk);
     }
 
     public fun return_and_share(self: File) {

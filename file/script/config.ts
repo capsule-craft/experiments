@@ -7,4 +7,4 @@ const connection = new Connection({ fullnode: "http://127.0.0.1:9000" });
 const keypair = Ed25519Keypair.deriveKeypair(mnemonics);
 export const provider = new JsonRpcProvider(connection);
 export const signer = new RawSigner(keypair, provider);
-export const packageId = "0x6764ce0fa896e011985d537e344db7759c0ac4da7e9eeba7befc672578ee555a";
+export const packageId = "0x7f4527c0f317a0e0e228aa42fae34fa7ffe18e15ac76042ad63c07048cdeadda";
