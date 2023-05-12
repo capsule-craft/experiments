@@ -1,6 +1,6 @@
 import { Connection, JsonRpcProvider, Ed25519Keypair, RawSigner } from '@mysten/sui.js';
 
-// Setup connection
+// Public key: 0xfa85b344263a7a9c694f78990fbf48ab2d24842cc7dd07d539d3d90647c6e178
 const mnemonics = 'invest half dress clay green task scare hood quiz good glory angry';
 
 const connection = new Connection({ fullnode: 'https://rpc-sui-testnet.cosmostation.io/' });
