@@ -1,10 +1,10 @@
 [package]
 name = "WrapTest"
-version = "0.1.0"
-published-at = "0x5031bc23fffb061741418473edead94c2c1a928001794b2c4c0f41f5d23068f4" #Testnet
+version = "0.2.0"
+published-at = "0x3e20f3b0b65391dc772f3d3d2bf48ce78917d4c71a2ee10ee463df745c05743d" #Testnet
 
 [dependencies]
 Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "testnet" }
 
 [addresses]
-wrap_test =  "0x5031bc23fffb061741418473edead94c2c1a928001794b2c4c0f41f5d23068f4"
+wrap_test =  "0x3e20f3b0b65391dc772f3d3d2bf48ce78917d4c71a2ee10ee463df745c05743d"
