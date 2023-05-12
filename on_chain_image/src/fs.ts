@@ -1,5 +1,5 @@
-import fs from "fs/promises";
-import mime from "mime";
+import fs from 'fs/promises';
+import mime from 'mime';
 
 export async function splitFile(path: string): Promise<number[][]> {
   const maxSize = 16 * 1000;
@@ -26,7 +26,7 @@ export async function splitFile(path: string): Promise<number[][]> {
 }
 
 export async function fileToDataURI(filePath: string) {
-  const fileContent = await fs.readFile(filePath, "base64");
+  const fileContent = await fs.readFile(filePath, 'base64');
   const mimeType = mime.getType(filePath);
 
   return `data:${mimeType};base64,${fileContent}`;

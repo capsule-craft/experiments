@@ -1,0 +1,10 @@
+[package]
+name = "OnChainImage"
+version = "0.1.0"
+published-at = "0x5001bee9baf10632686828854480009e88cdf7e7b3efaa8ff058addd22bb859c" # Testnet
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "devnet" }
+
+[addresses]
+on_chain_image =  "0x5001bee9baf10632686828854480009e88cdf7e7b3efaa8ff058addd22bb859c"
